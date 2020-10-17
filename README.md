@@ -1,0 +1,1 @@
+# zuul-authorizationserver-resources
