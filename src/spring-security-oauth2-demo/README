@@ -1,0 +1,19 @@
+简单版的oauth2, 采用access token去访问资源的方式
+包括采用bearer token通过zuul来访问资源服务器,
+默认情况下, 如果没有设置zuul的敏感信息头的话, 那么Cookie,Set-Cookie以及authorization在路由的时候时被去掉的.
+
+因此, Zuul中的配置如下:
+zuul:
+  routes:
+    resources:
+      path: /resources/**
+      url: http://localhost:8081/resources
+  sensitive-headers: Cookie,Set-Cookie
+  add-host-header: true
+server:
+  port: 8082
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,0 +1,14 @@
+zuul:
+  routes:
+    resources:
+      path: /resources/**
+      url: http://localhost:8081/resources
+  sensitive-headers: Cookie,Set-Cookie
+  add-host-header: true
+server:
+  port: 8082
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
