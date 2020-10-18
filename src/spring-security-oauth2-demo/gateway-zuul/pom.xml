@@ -24,6 +24,23 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>saas</groupId>
+            <artifactId>discovery-client</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <!--添加如下依赖之后, 我们可以通过/actuator/routes和/actuator/routes/details来查看具体的理由信息-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

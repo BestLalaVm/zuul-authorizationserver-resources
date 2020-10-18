@@ -1,0 +1,7 @@
+eureka:
+  instance:
+    non-secure-port: 9000
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.non-secure-port}/eureka/
